@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "index",
+  "info": {
+    "name": "Index",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "site_name": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

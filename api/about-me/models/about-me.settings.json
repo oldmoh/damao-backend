@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_me",
+  "info": {
+    "name": "About Me",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "timeline": {
+      "type": "json"
+    },
+    "about_site": {
+      "type": "text"
+    },
+    "about_me": {
+      "type": "text"
+    }
+  }
+}
